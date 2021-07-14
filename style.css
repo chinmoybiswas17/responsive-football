@@ -1,0 +1,328 @@
+/* -------------
+basic style
+---------------- */
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  .button {
+    color: white;
+    background-color: #e02c6d;
+    padding: 10px 24px 10px 24px;
+    text-decoration: none;
+    transition: padding  0.4s ;
+    transition:font-size 0.4s;
+  }
+  .button:hover{
+      background-color:gainsboro;
+      color:#e02c6d;
+      transform:translate(-50px,50px);
+      padding:10px 30px 10px 24px;
+      font-size: 20px;
+  }
+  p {
+    color: dimgray;
+}
+  /* -----------------
+    header area starts
+    ------------------- */
+  .header-area {
+    display: flex;
+    background-color: #2d25a0;
+    
+  }
+  
+  .header-title {
+    width: 50%;
+    margin: 207px 120px 156px 150px;
+    color: white;
+  }
+  .header-title a {
+    padding: 10px 24px 10px 24px;
+  }
+  #right-arrow{
+      margin:0 0 0 10px;
+  }
+  .header-image {
+    width: 50%;
+    margin: 153px 110px 86px 0;
+    transition:transform 0.4s ease-in;
+  }
+  .header-image:hover{
+      transform: translate(-100px,-50px);
+  }
+  
+  .header-image img {
+    width: 556px;
+    height: 438px;
+  }
+  /* -------------
+    header area ends
+    ---------------- */
+  
+  /* -------------
+    main area starts 
+    ----------------*/
+  .top-players {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 70px 150px 0 140px;
+  }
+  .player {
+    width: 330px;
+    height: 456px;
+    background: #ffffff;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border: 1px solid white;
+    margin: 0 0 45px 0;
+  }
+  .player img {
+    width: 300px;
+    height: 256px;
+    margin: 15px;
+  }
+  .player h2,
+  p {
+    width: 300px;
+    margin: 15px;
+  }
+  /* --------------
+    gallery area starts 
+    ----------------*/
+    .gallery h1{
+        margin:100px 0 50px 0 ;
+    }
+  .gallery .heading {
+    color: #2d25a0;
+    text-align: center;
+  }
+  
+  .box-container {
+    margin: 70px 50px 0 140px;
+  }
+  .gallery .box-container .box {
+    height: 400px;
+    width: 28%;
+    margin: 20px 0px 0px 2%;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 10px;
+  }
+  .gallery .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  /* -----------------
+      gallery section ends
+      --------------------- */
+  /* -----------------
+      best coaches starts
+      --------------------- */
+  .best-coach-section h1 {
+    color: #2d25a0;
+    text-align: center;
+    margin: 100px 0 50px 0;
+  }
+  .best-coaches {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 110px 0 180px;
+  }
+  .coach {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+  }
+  .coach-image {
+  }
+  .coach-image img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .coach-info h3 {
+    margin: 0 0 0 16px;
+  }
+  .coach-info .button {
+    margin: 16px 0 0 16px;
+  }
+  /* ------------
+  footer area starts
+  --------------- */
+  footer{
+      margin: 150px 450px 50px 450px;
+  }
+  .logo{
+      text-align: center;
+      
+  }
+  .logo img{
+  width: 100%;
+  }
+  .social-media-icons{
+      margin: 10px 70px 20px 159px;
+      font-size: 10px;
+  }
+  .social-media-icons i{
+      margin: 7px;
+      padding: 10px;
+      background-color: #ece8e8;
+      color:#969BAB;
+      border-radius:50px;
+  }
+  footer p{
+      margin: 20px 70px 20px 150px;
+      
+  }
+  /* responsive design */
+  @media only screen and (max-width: 688px) {
+      .header-area {
+        background-color: #2d25a0;
+        display: flex;
+        flex-direction: column;
+      }
+      .header-title {
+        align-items: center;
+        margin: 20px 10px 40px 20px;
+      }
+    
+      .header-image {
+        width: 100%;
+        margin: 100px 0 0 0;
+        transition:transform 0.4s ease-in;
+    }
+    .header-image:hover{
+        transform: translate(-10px,-79px);
+    }
+      .header-image img {
+        width: 100%;
+      }
+      .top-players {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 40px 10px 10px 10px;
+      }
+      .gallery .box-container .box {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+      }
+      .box-container {
+        margin: 5px;
+      }
+      .best-coaches {
+        margin: 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .best-coaches .coach {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 0 50px 0;
+      }
+      .best-coach-section h1{
+          width: 50%;
+          margin: 100px 0 0 70px;
+      }
+      .coach-image{
+          width: 100%;
+      }
+      footer{
+        margin: 40px 0 0 0;
+        overflow: hidden;
+    }
+    .logo{
+
+    }
+    .logo img{
+        width: 50%;
+    }
+    .social-media-icons{
+        margin: 10px 70px 20px 100px;
+        font-size: 10px;
+    }
+    footer p{
+        margin: 20px 70px 20px 90px;
+        width: 250px;
+    }
+    
+}
+    @media only screen and (max-width:992px) and (min-width: 700px)  {
+        
+        .header-area {
+          background-color: #2d25a0;
+          display: flex;
+          flex-direction: column;
+        }
+        .header-title {
+          text-align: center;
+          margin: 20px 0px 40px 190px;
+        }
+      
+        .header-image {
+          width: 100%;
+          margin: 100px 0 0 0;
+          transition:transform 0.4s ease-in;
+    }
+    .header-image:hover{
+        transform: translate(-10px,-79px);
+    }
+        .header-image img {
+          width: 100%;
+        }
+        .top-players {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          margin: 40px 10px 10px 10px;
+        }
+        .gallery .box-container .box {
+          display: inline-block;
+          width: 100%;
+          margin: 0;
+        }
+        .box-container {
+          margin: 5px;
+        }
+        .best-coaches {
+          margin: 10px;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .coach-image{
+            width: 100%;
+        }
+        .best-coaches .coach {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          margin-bottom:50px;
+        }
+        .best-coaches img {
+          width: 100%;
+        }
+        footer{
+            margin: 40px 0 0 0;
+        }
+        .logo{
+    
+        }
+        .logo img{
+            width: 50%;
+        }
+        .social-media-icons{
+            margin: 10px 70px 20px 320px;
+            font-size: 10px;
+        }
+        footer p{
+            margin: 20px 70px 20px 320px;
+            
+        }
+      }
+  
